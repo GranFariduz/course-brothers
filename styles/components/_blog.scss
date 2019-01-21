@@ -123,14 +123,15 @@
 
   &__header {
 
-    width: 100%;
+    width: 90%;
     height: 40rem;
-    background: linear-gradient(0deg, rgba(219, 50, 77, 0.8), rgba(219, 50, 77, 0.8)), 
-                url('../assets/images/about-bg.jpg');
+    background: url('../assets/images/blog-detail-bg.png');
     background: {
       size: cover;
       position: center;
     }
+    margin: 0 auto;
+    margin-top: 20rem;
     box-sizing: border-box;
     padding: 7rem;
 
@@ -140,7 +141,7 @@
       font-family: $league;
       h1 {
         width: 50rem;
-        margin-bottom: 0;
+        margin: 0;
       }
       h3 {
         margin: 0.5rem 0 0 0;
@@ -177,6 +178,7 @@
 
     &__share {
       width: 32rem;
+      margin-top: 4rem;
       display: flex;
       justify-content: space-between;
       box-sizing: border-box;
@@ -212,7 +214,7 @@
   &__content {
 
     width: 80%;
-    padding: 7rem 7rem 2rem 7rem;
+    padding: 5rem 7rem 2rem 7rem;
 
     p {
       font-weight: $medium;

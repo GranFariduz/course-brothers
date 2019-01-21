@@ -45,7 +45,7 @@
       <div class="blog_detail__header">
         <div class="blog_detail__header__title">
           <h1>when we were almost caught doing bank fraud</h1>
-          <h3>and why we still do it</h3>
+          <h3>(and why we still do it)</h3>
         </div>
         <div class="blog_detail__footer">
           <div class="blog_detail__footer__desc">
@@ -54,7 +54,7 @@
           </div>
           <div class="blog_detail__footer__share">
             <h5 class="blog_detail__footer__share__item">share on facebook</h5>
-            <h5 class="blog_detail__footer__share__item">share on twitter</h5>
+            <h5 class="blog_detail__footer__share__item">tweet on twitter</h5>
           </div>
         </div>
       </div>

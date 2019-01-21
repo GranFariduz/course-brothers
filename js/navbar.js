@@ -1,38 +1,3 @@
-// For the top courses modal
-let topCourseItems = document.querySelectorAll('.top_courses__item');
-let topCoursesItemsSections = document.querySelectorAll('.top_courses__item__section');
-let topCoursesItemsSectionsButtons = document.querySelectorAll('.top_courses__item__section__button');
-
-function sectionShow(sectionNum) {
-  topCoursesItemsSections[sectionNum].style.zIndex = '5';
-  topCoursesItemsSections[sectionNum].style.opacity = '1';
-};
-
-function sectionHide(sectionNum) {
-  topCoursesItemsSections[sectionNum].style.zIndex = '-5';
-  topCoursesItemsSections[sectionNum].style.opacity = '0';
-};
-
-for(let i = 0; i < topCourseItems.length; i++) {
-  topCourseItems[i].addEventListener('click', () => {
-    sectionShow(i);
-  });
-  topCoursesItemsSectionsButtons[i].addEventListener('click', (e) => {
-    e.stopPropagation();
-    sectionHide(i);
-  });
-}
-
-
-// Parallax for featured courses
-$(window).on('scroll', () => {
-  $('.featured_courses').css({
-    'background-position': `100% ${($(document).scrollTop() / 7)}%`
-  });
-});
-
-
-
 // Back to top
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 1000) {
@@ -102,4 +67,20 @@ registerHereButton.addEventListener('click', () => {
 loginHereButton.addEventListener('click', () => {
   loginModal.classList.add('login_modal--active');
   registerModal.classList.remove('register_modal--active');
+});
+
+
+// For Navbar Item Dropdown
+const navbarList = document.querySelectorAll('.navbar_main__courses__item');
+const navbarItems = document.querySelectorAll('.navbar_main__courses__item__dropdown');
+
+navbarList.forEach((item, index) => {
+  item.addEventListener('mouseover', (e) => {
+    navbarItems[index].classList.add('navbar_main__courses__item__dropdown--active');
+    e.stopPropagation();
+  });
+  item.addEventListener('mouseleave', (e) => {
+    navbarItems[index].classList.remove('navbar_main__courses__item__dropdown--active');
+    e.stopPropagation();
+  });
 });

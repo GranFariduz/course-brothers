@@ -62,26 +62,104 @@
       <div class="navbar_main__courses__item">
         <h3>all colleges</h3>
         <span><i class="fa fa-angle-down"></i></span>
+        <div class="navbar_main__courses__item__dropdown">
+          <div class="navbar_main__courses__item__dropdown__head">
+            <div class='item__arrow'></div>
+            <h4>our college index</h4>
+          </div>
+          <div class="navbar_main__courses__item__dropdown__content">
+            <a href=""><li>annamalai university</li></a>
+            <a href=""><li>NMIMS</li></a>
+            <a href=""><li>SCDL</li></a>
+            <a href=""><li>bharati vidyapeeth</li></a>
+            <a href=""><li>glasgow university</li></a>
+          </div>
+        </div>
       </div>
 
       <div class="navbar_main__courses__item">
         <h3>pg courses</h3>
         <span><i class="fa fa-angle-down"></i></span>
+        <div class="navbar_main__courses__item__dropdown">
+          <div class="navbar_main__courses__item__dropdown__head">
+            <div class='item__arrow'></div>
+            <h4>pg courses index</h4>
+          </div>
+          <div class="navbar_main__courses__item__dropdown__content">
+            <a href=""><li>MBA in supply chain</li></a>
+            <a href=""><li>BBA + MBA</li></a>
+            <a href=""><li>HR Management</li></a>
+            <a href=""><li>MBA in supply chain</li></a>
+            <a href=""><li>BBA + MBA</li></a>
+            <a href=""><li>HR Management</li></a>
+            <a href=""><li>MBA in supply chain</li></a>
+            <a href=""><li>BBA + MBA</li></a>
+            <a href=""><li>HR Management</li></a>
+            <a href=""><li>MBA in supply chain</li></a>
+            <a href=""><li>BBA + MBA</li></a>
+            <a href=""><li>HR Management</li></a>
+            <a href=""><li>MBA in supply chain</li></a>
+            <a href=""><li>BBA + MBA</li></a>
+            <a href=""><li>HR Management</li></a>
+            <a href=""><li>HR Management</li></a>
+            <a href=""><li>MBA in supply chain</li></a>
+            <a href=""><li>BBA + MBA</li></a>
+          </div>
+        </div>
       </div>
 
       <div class="navbar_main__courses__item">
         <h3>ug courses</h3>
         <span><i class="fa fa-angle-down"></i></span>
+        <div class="navbar_main__courses__item__dropdown">
+          <div class="navbar_main__courses__item__dropdown__head">
+            <div class='item__arrow'></div>
+            <h4>ug courses index</h4>
+          </div>
+          <div class="navbar_main__courses__item__dropdown__content">
+            <a href=""><li>annamalai university</li></a>
+            <a href=""><li>NMIMS</li></a>
+            <a href=""><li>SCDL</li></a>
+            <a href=""><li>bharati vidyapeeth</li></a>
+            <a href=""><li>glasgow university</li></a>
+          </div>
+        </div>
       </div>
 
       <div class="navbar_main__courses__item">
         <h3>diploma</h3>
         <span><i class="fa fa-angle-down"></i></span>
+        <div class="navbar_main__courses__item__dropdown">
+          <div class="navbar_main__courses__item__dropdown__head">
+            <div class='item__arrow'></div>
+            <h4>diploma courses</h4>
+          </div>
+          <div class="navbar_main__courses__item__dropdown__content">
+            <a href=""><li>annamalai university</li></a>
+            <a href=""><li>NMIMS</li></a>
+            <a href=""><li>SCDL</li></a>
+            <a href=""><li>bharati vidyapeeth</li></a>
+            <a href=""><li>glasgow university</li></a>
+          </div>
+        </div>
       </div>
 
       <div class="navbar_main__courses__item">
         <h3>certificate</h3>
         <span><i class="fa fa-angle-down"></i></span>
+        <div class="navbar_main__courses__item__dropdown">
+          <div class="navbar_main__courses__item__dropdown__head">
+            <div class='item__arrow'></div>
+            <h4>certificate courses</h4>
+          </div>
+          <div class="navbar_main__courses__item__dropdown__content">
+            <a href=""><li>annamalai university</li></a>
+            <a href=""><li>NMIMS</li></a>
+            <a href=""><li>SCDL</li></a>
+            <a href=""><li>bharati vidyapeeth</li></a>
+            <a href=""><li>glasgow university</li></a>
+          </div>
+        </div>
       </div>
       
 
