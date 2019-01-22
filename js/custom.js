@@ -1,15 +1,8 @@
 $(document).ready(function() {
-  // =====  GSAP Animations =====
 
-  // Start function with Master Timeline
-  function start() {
-    console.log("----- GSAP STARTS -----");
-    const masterTl = new TimelineMax();
-  }
-
-  // WOW JS and GSAP Animations start
+  // Running everything when whole webpage loads including images
   window.addEventListener("load", function() {
-    start();
+
     new WOW().init();
 
     // Header Carousel

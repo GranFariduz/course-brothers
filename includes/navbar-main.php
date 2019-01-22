@@ -1,3 +1,7 @@
+<!-- PRELOADER -->
+<?php include 'preloader.php' ?>
+<!-- /PRELOADER -->
+
 <div class='navbar_main'>
 
   <div class="navbar_main__appendix">

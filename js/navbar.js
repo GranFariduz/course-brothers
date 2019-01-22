@@ -1,3 +1,51 @@
+// Preloader
+
+// ALL ANIMATION VARIABLES
+const course = document.querySelector('#course');
+const brother = document.querySelector('#brother');
+const com = document.querySelector('#com');
+const container = document.querySelector('.preloader__main_container');
+const tagline = document.querySelector('.preloader__tagline');
+
+const logoAnimation = () => {
+
+  const logoAnimTl = new TimelineMax({ repeat: -1, repeatDelay: 1, yoyo: true });
+  logoAnimTl
+    .fromTo(course, 2, { y: -1000 }, { y: -6, ease: Power3.easeInOut })
+    .fromTo(brother, 2, { y: 1000 }, { y: 27, ease: Power3.easeInOut }, '-=1')
+    .fromTo(com, 2, { x: -1000 }, { x: 20, ease: Power3.easeInOut }, '-=1')
+    .fromTo(tagline, 2, { opacity: 0 }, { opacity: 1, ease: Power4.easeInOut }, '-=0.4')
+    ;
+
+  return logoAnimTl;
+
+};
+
+// GSAP start function
+const start = () => {
+  console.log('----- GSAP STARTS ------');
+  const masterTl = new TimelineMax();
+  masterTl.add(logoAnimation(), 'logo-anim');
+};
+
+// Starting off the animation(s)
+start();
+
+// Removing Preloader on Page Load
+const preloader = document.querySelector('.preloader');
+const bodyForOverflow = document.querySelector('body');
+
+// Setting body to not overflow while preloader is present
+bodyForOverflow.style.overflowY = 'hidden';
+
+window.addEventListener('load', () => {
+  bodyForOverflow.style.overflowY = 'scroll';
+  preloader.classList.add('preloader--fadeOut');
+});
+
+
+
+// ------------------------------
 // Back to top
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 1000) {
@@ -13,6 +61,7 @@ $('.back-to-top').click(() => {
 
 
 
+// ------------------------------
 // For Login Modal Display
 const loginButton = document.querySelector('.navbar_main__appendix__login');
 const loginModal = document.querySelector('.login_modal');
@@ -31,6 +80,7 @@ loginModalClose.addEventListener('click', function() {
 
 
 
+// ------------------------------
 // For Register Modal Display
 const registerButton = document.querySelector('.navbar_main__appendix__register');
 const registerModal = document.querySelector('.register_modal');
@@ -70,6 +120,8 @@ loginHereButton.addEventListener('click', () => {
 });
 
 
+
+// ------------------------------
 // For Navbar Item Dropdown
 const navbarList = document.querySelectorAll('.navbar_main__courses__item');
 const navbarItems = document.querySelectorAll('.navbar_main__courses__item__dropdown');
