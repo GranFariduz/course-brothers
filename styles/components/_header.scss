@@ -3,97 +3,156 @@
 
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   margin-top: 14rem;
-  background: {
-    size: cover;
-    position: 50%;
-  }
+  display: flex;
 
-  &__overlay {
 
-    position: absolute;
+  &__testimonial {
+
+    width: 30%;
     height: 100%;
-    width: 70%;
-    background: linear-gradient(to left, rgb(219, 50, 78), rgba(219, 50, 78, 0));
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 2;
+    background-color: transparent;
 
-    &__icons {
-      height: 80%;
-      width: 20%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-right: 1rem;
-      align-items: center;
+    &__slides {
+      position: relative;
+      width: 100%;
+      height: 100%;
       &__item {
-        display: flex;
-        height: 5rem;
-        justify-content: center;
-        align-items: center;
+
+        position: absolute;
+        width: 100%;
+        height: 100%;  
+
+        &__overlay {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(to bottom, #00000000, #000000);
+        }
+
         img {
-          height: 3rem;
-          width: 3rem;
-          cursor: pointer;
+          width: 100%;
+          height: 100%;
         }
-        h5 {
-          color: white;
-          text-transform: uppercase;
+
+        &__sep {
           width: 8rem;
-          font-size: 1.1rem;
-          font-weight: $medium;
-          padding-right: 2rem;
-          text-align: right;
+          height: 0.1rem;
+          background-color: $bright-yellow;
         }
+
+        &__content {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          bottom: 0;
+          h4 {
+            color: $bright-yellow;
+            margin: 0;
+          }
+          h5 {
+            color: $bright-yellow;
+            margin: 0.5rem;
+            margin-bottom: 1rem;
+            font-weight: $light;
+          }
+          p {
+            width: 28rem;
+            color: white;
+            text-align: center;
+            font-size: 1.35rem;
+            margin: 1.5rem 0;
+          }
+        }
+
       }
     }
 
   }
 
   &__carousel {
-    &__buttons {
-      position: absolute;
-      z-index: 1;
-      display: flex;
-      flex-direction: column-reverse;
-      top: 50%;
-      transform: translateY(-50%);
-      i {
-        color: $rusty-red;
-        font-size: 3rem;
-        padding: 1.5rem;
-        font-weight: $semiBold;
-        margin-top: 2rem;
-        text-align: center;
-        background-color: white;
-        transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-        cursor: pointer;
-        &:hover {
-          background-color: $rusty-red;
-          color: white;
-        }
-      }
-    }
+
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: transparent;
+
     &__container {
-      position: absolute;
-      top: 0; 
-      left: 0;
       width: 100%;
-      .siema {
-        div {
-          width: 100%;
-          height: 50vh;
-          background: {
-            size: cover;
-            position: center;
+      height: 100%;
+    }
+
+    &__item {
+
+      position: relative;
+      width: 100%;
+      height: 80%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      &__content {
+        position: absolute;
+        width: 20rem;
+        top: 25%;
+        transform: translateY(-25%);
+        right: 0;
+        background-color: transparentize($bright-yellow, 0.1);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+          text-align: center;
+          color: white;
+          margin-bottom: 1rem;
+        }
+        &__sep {
+          height: 0.1rem;
+          width: 5rem;
+          background-color: white;
+        }
+        button {
+          border: none;
+          background-color: white;
+          border-radius: 0.5rem;
+          padding: 1rem;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          text-transform: uppercase;
+          font-weight: $medium;
+          a:link, a:visited, a:active {
+            text-decoration: none;
+            color: $bright-yellow;
           }
         }
       }
+
     }
+
+    &__buttons {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-around;
+      div {
+        margin: 0.6rem;
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: 50%;
+        background-color: $bright-yellow;
+        cursor: pointer;
+      }
+    }
+
   }
   
 }

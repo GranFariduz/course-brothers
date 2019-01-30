@@ -14,7 +14,7 @@ const logoAnimation = () => {
     .fromTo(course, 2, { y: -1000 }, { y: -6, ease: Power3.easeInOut })
     .fromTo(brother, 2, { y: 1000 }, { y: 27, ease: Power3.easeInOut }, '-=1')
     .fromTo(com, 2, { x: -1000 }, { x: 20, ease: Power3.easeInOut }, '-=1')
-    .fromTo(tagline, 2, { opacity: 0 }, { opacity: 1, ease: Power4.easeInOut }, '-=0.4')
+    .fromTo(tagline, 2, { x: -2000 }, { x: -1, ease: Elastic.easeInOut }, '-=0.4')
     ;
 
   return logoAnimTl;
@@ -49,7 +49,7 @@ window.addEventListener('load', () => {
 // Back to top
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 1000) {
-    $('.back-to-top').css('bottom', '3rem');
+    $('.back-to-top').css('bottom', '10rem');
   } else {
     $('.back-to-top').css('bottom', '-10rem');
   }
@@ -136,3 +136,29 @@ navbarList.forEach((item, index) => {
     e.stopPropagation();
   });
 });
+
+
+// -------------------------------
+// For Dynamic width of navlist items
+const navListDropdowns = document.querySelectorAll('.navbar_main__courses__item__dropdown');
+const navListItems = document.querySelectorAll('.navbar_main__courses__item__dropdown__content');
+
+const baseNavlistWidth = 18;
+const navlistHeightLimit = 13;
+
+navListItems.forEach((navListItem, index) => {
+  if (navListItem.children.length >= navlistHeightLimit * 3) {
+    changeNavlistWidth(index, 4);
+  } else if (navListItem.children.length >= navlistHeightLimit * 2) {
+    changeNavlistWidth(index, 3);
+  } else if (navListItem.children.length >= navlistHeightLimit) {
+    changeNavlistWidth(index, 2);
+  } else {
+    changeNavlistWidth(index);
+  }
+});
+
+function changeNavlistWidth(index, multiplier = 1) {
+  navListDropdowns[index].style.width = `${baseNavlistWidth * multiplier}rem`;
+  navListItems[index].style.width = `${baseNavlistWidth * multiplier}rem`;
+};

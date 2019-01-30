@@ -61,7 +61,7 @@
             <div class="all_testimonials__main__item__content">
               <h4>andrew laedis</h4>
               <h5>nmims</h5>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis atque, eius distinctio sit eveniet voluptatibus. Assumenda aspernatur recusandae, eum eligendi aut totam minus facilis voluptas doloremque! Dolorem.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis atque, eius</p>
             </div>
           </div>
           <div class="all_testimonials__main__item">
@@ -71,7 +71,7 @@
             <div class="all_testimonials__main__item__content">
               <h4>dazai osamu</h4>
               <h5>bharati vidyapeeth</h5>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis atque, eius distinctio sit eveniet voluptatibus. Assumenda aspernatur recusandae, eum eligendi aut totam minus facilis voluptas doloremque! Dolorem.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis atque, eius distinctio sit eveniet voluptatibus. .</p>
             </div>
           </div>
           <div class="all_testimonials__main__item">
@@ -81,7 +81,7 @@
             <div class="all_testimonials__main__item__content">
               <h4>kunikida</h4>
               <h5>assam downtown university</h5>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis atque, eius distinctio sit eveniet voluptatibus. Assumenda aspernatur recusandae, eum eligendi aut totam minus facilis voluptas doloremque! Dolorem.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis at.</p>
             </div>
           </div>
           <div class="all_testimonials__main__item">
@@ -91,7 +91,7 @@
             <div class="all_testimonials__main__item__content">
               <h4>madara uchiha</h4>
               <h5>scdl</h5>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis atque, eius distinctio sit eveniet voluptatibus. Assumenda aspernatur recusandae, eum eligendi aut totam minus facilis voluptas doloremque! Dolorem.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis atque, eius distinctio sit.</p>
             </div>
           </div>
           <div class="all_testimonials__main__item">
@@ -101,7 +101,7 @@
             <div class="all_testimonials__main__item__content">
               <h4>madara uchiha</h4>
               <h5>scdl</h5>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis atque, eius distinctio sit eveniet voluptatibus. Assumenda aspernatur recusandae, eum eligendi aut totam minus facilis voluptas doloremque! Dolorem.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis atque, eius distinctio sit eveniet </p>
             </div>
           </div>
           <div class="all_testimonials__main__item">
@@ -111,7 +111,7 @@
             <div class="all_testimonials__main__item__content">
               <h4>madara uchiha</h4>
               <h5>scdl</h5>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis atque, eius distinctio sit eveniet voluptatibus. Assumenda aspernatur recusandae, eum eligendi aut totam minus facilis voluptas doloremque! Dolorem.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum optio labore reiciendis atque, eius distinctio sit eveniet voluptat.</p>
             </div>
           </div>
 
@@ -137,6 +137,8 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">
   </script>
+  <!-- TweenMax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <!-- WOW JS -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
   <!-- CUSTOM JS -->

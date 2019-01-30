@@ -61,62 +61,104 @@
     <!-- HEADER -->
     <div class="header">
 
-      <div class="header__overlay">
-        <div class="header__overlay__icons">
+      <div class="header__testimonial">
+        <a href="./pages/all-testimonials.php">
+          <ul class="rslides header__testimonial__slides">
 
-          <div class="header__overlay__icons__item">
-            <h5>credible institutes</h5>
-            <span class='tooltip' title='For formal education courses, check the status of the listed universities on the UGC DEB website. https://www.ugc.ac.in/deb/'>
-              <img src="./assets/svg/Icons/white/apartments.svg" />
-            </span>
-          </div>
+            <li class='header__testimonial__slides__item'>
+              <div class="header__testimonial__slides__item__overlay"></div>
+              <img src="https://specials-images.forbesimg.com/imageserve/5b44f42f31358e2c990eadbe/416x416.jpg?background=000000&cropX1=527&cropX2=2481&cropY1=73&cropY2=2027" alt="Sky Scrapers" />
+              <div class="header__testimonial__slides__item__content">
+                <h4>Robert Downey Jr.</h4>
+                <h5>NMIMS</h5>
+                <div class="header__testimonial__slides__item__sep"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique possimus! Lab</p>
+              </div>
+            </li>
 
-          <div class="header__overlay__icons__item">
-            <h5>transparent information</h5>
-            <span class='tooltip' title='CourseBrother.com is not a study center and has no role in admission decisions, 
-              examinations and / or awarding any degree or diploma'>
-              <img src="./assets/svg/Icons/white/information.svg" />
-            </span>
-          </div>
+            <li class='header__testimonial__slides__item'>
+              <div class="header__testimonial__slides__item__overlay"></div>
+              <img src="https://images.mid-day.com/images/2018/aug/rajkumaar-rao-g_d_d.jpg" alt="Sky Scrapers" />
+              <div class="header__testimonial__slides__item__content">
+                <h4>Rajkumar Rao</h4>
+                <h5>SCDL</h5>
+                <div class="header__testimonial__slides__item__sep"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique possimus! Lab</p>
+              </div>
+            </li>
 
-          <div class="header__overlay__icons__item">
-            <h5>genuine fee</h5>
-            <span class='tooltip' title='CourseBrother.com charges no extra fee. No discount is offered by the course provider of any of the courses listed'>
-              <img src="./assets/svg/Icons/white/give-money.svg" />
-            </span>
-          </div>
+            <li class='header__testimonial__slides__item'>
+              <div class="header__testimonial__slides__item__overlay"></div>
+              <img src="https://www.alux.com/wp-content/uploads/2017/05/Jet-Li-Net-Worth.jpg" alt="Sky Scrapers" />
+              <div class="header__testimonial__slides__item__content">
+                <h4>Jet Li</h4>
+                <h5>Bharati Vidyapeeth</h5>
+                <div class="header__testimonial__slides__item__sep"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique possimus! Lab</p>
+              </div>
+            </li>
 
-          <div class="header__overlay__icons__item">
-            <h5>counselling support</h5>
-            <span class='tooltip' title='Get expert and dedicated counselling support to make an informed education decision'>
-              <img src="./assets/svg/Icons/white/phone-receiver.svg" />
-            </span>
-          </div>
+            <li class='header__testimonial__slides__item'>
+              <div class="header__testimonial__slides__item__overlay"></div>
+              <img src="https://image.freepik.com/free-vector/bright-background-with-dots_1055-3132.jpg" alt="Sky Scrapers" />
+              <div class="header__testimonial__slides__item__content">
+                <h4>No Longer Human</h4>
+                <h5>Annamalai University</h5>
+                <div class="header__testimonial__slides__item__sep"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique possimus! Lab</p>
+              </div>
+            </li>
 
-          <div class="header__overlay__icons__item">
-            <h5>study material</h5>
-            <span class='tooltip' title='Study material is provided by the respective course providers'>
-              <img src="./assets/svg/Icons/white/books-stack-of-three.svg" />
-            </span>
-          </div>
-
-        </div>
+          </ul>
+        </a>
+        
       </div>
 
       <div class="header__carousel">
-        <div class="header__carousel__container">
-          <div class="header__carousel__buttons">
-            <i class="fa fa-angle-left"></i>
-            <i class="fa fa-angle-right"></i>
+        <div class="header__carousel__container siema">
+          <div class="header__carousel__item">
+            <img src="./assets/images/blog-detail-bg.png" alt="Some kids Shittin' their pants" />
+            <div class="header__carousel__item__content">
+              <h4>NMIMS is now a part of our community</h4>
+              <div class="header__carousel__item__content__sep"></div>
+              <button><a href="#">know more</a></button>
+            </div>
           </div>
-          <div class="siema">
-
-            <div style='background-image: url("./assets/images/about-bg.jpg")'></div>
-            <div style='background-image: url("./assets/images/about-founder-bg.jpg")'></div>
-            <div style='background-image: url("./assets/images/contact-bg.jpg")'></div>
-            <div style='background-image: url("./assets/images/about-founder-bg.jpg")'></div>
-
+          <div class="header__carousel__item">
+            <img src="./assets/images/contact-bg.jpg" alt="Some kids Shittin' their pants" />
+            <div class="header__carousel__item__content">
+              <h4>5 Universities added to our large index!</h4>
+              <div class="header__carousel__item__content__sep"></div>
+              <button><a href="#">know more</a></button>
+            </div>
           </div>
+          <div class="header__carousel__item">
+            <img src="./assets/images/about-bg.jpg" alt="Some kids Shittin' their pants" />
+            <div class="header__carousel__item__content">
+              <h4>We now accept PayPal! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, delectus.</h4>
+              <div class="header__carousel__item__content__sep"></div>
+              <button><a href="#">know more</a></button>
+            </div>
+          </div>
+          <div class="header__carousel__item">
+            <img src="./assets/images/contact-bg.jpg" alt="Some kids Shittin' their pants" />
+            <div class="header__carousel__item__content">
+              <h4>5 Universities added to our large index!</h4>
+              <div class="header__carousel__item__content__sep"></div>
+              <button><a href="#">know more</a></button>
+            </div>
+          </div>
+          <div class="header__carousel__item">
+            <img src="./assets/images/contact-bg.jpg" alt="Some kids Shittin' their pants" />
+            <div class="header__carousel__item__content">
+              <h4>5 Universities added to our large index!</h4>
+              <div class="header__carousel__item__content__sep"></div>
+              <button><a href="#">know more</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__carousel__buttons">
         </div>
       </div>
 
@@ -129,7 +171,7 @@
 
       <div class="uni_and_col__title">trusted by 10+ universities & colleges</div>
         
-      <ul class="rslides">
+      <ul class="rslides uni_col_slides">
         <li>
           <img src="./assets/images/universities_institute_img/aims1.jpg" />
           <img src="./assets/images/universities_institute_img/iamai3.png" />
@@ -620,122 +662,6 @@
       </div>
     </div>
     <!-- /FEATURES -->
-
-
-    <!-- TESTIMONIALS -->
-    <div class="testimonials">
-
-      <div class='testimonials__container'>
-        <div class="testimonials__title">
-          <h3>25, 000+</h3>
-          <span>happy students</span>
-        </div>
-        
-        <div class='testimonials__body__container siema'>
-          <div class="testimonials__body">
-            
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>lalit messi</h5>
-              <h6>upes</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Krishna Ronaldo</h5>
-              <h6>nmims</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Kevin De Bruyne</h5>
-              <h6>scdl</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Neymar Jr.</h5>
-              <h6>scdl</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Ulquiorra</h5>
-              <h6>annamalai</h6>
-            </div>
-          
-          </div>
-          <div class="testimonials__body">
-            
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Romelu Lukaku</h5>
-              <h6>upes</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Dani Alves</h5>
-              <h6>nmims</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Pulisic</h5>
-              <h6>scdl</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Christian Erikson</h5>
-              <h6>scdl</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Ulquiorra</h5>
-              <h6>annamalai</h6>
-            </div>
-            
-          </div>
-          <div class="testimonials__body">
-            
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Keylor Navas</h5>
-              <h6>upes</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Thibaut Curtois</h5>
-              <h6>nmims</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Iker Casillas</h5>
-              <h6>scdl</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Gianluigi Buffon</h5>
-              <h6>scdl</h6>
-            </div>
-          
-            <div class="testimonials__body__item">
-              <img src="./assets/images/about_img/messi.jpg" />
-              <h5>Pickford</h5>
-              <h6>annamalai</h6>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- /TESTIMONIALS -->
 
 
     <!-- TOP_COURSES -->

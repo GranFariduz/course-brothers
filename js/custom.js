@@ -5,42 +5,65 @@ $(document).ready(function() {
 
     new WOW().init();
 
-    // Header Carousel
+    // Master Carousel
     let masterCarousel = document.querySelectorAll(".siema");
-    let headerSiema = new Siema({
+
+    // Header Carousel
+    let headerCarousel = new Siema({
       selector: masterCarousel[0],
-      draggable: false,
-      loop: true,
-      duration: 400
-    });
-
-    $(".header__carousel__buttons .fa-angle-right").click(() => {
-      headerSiema.next();
-    });
-    $(".header__carousel__buttons .fa-angle-left").click(() => {
-      headerSiema.prev();
-    });
-
-    setInterval(() => {
-      headerSiema.next();
-    }, 6000);
-
-    // Testimonial Scroll
-    let testCarousel = new Siema({
-      selector: masterCarousel[1],
       perPage: 1,
       duration: 400,
-      draggable: false,
-      loop: true
+      draggable: true,
+      onChange: slideColor
+    });
+    
+    // For Scrolling through buttons
+    const buttonContainer = document.querySelector('.header__carousel__buttons');
+    const slides = document.querySelectorAll('.header__carousel__item');
+
+    slides.forEach(() => {
+      const sliderButton = document.createElement('div');
+      buttonContainer.appendChild(sliderButton);
+    });
+
+    const slideChangeInterval = 8000;
+
+    function slideColor() {
+      const slideButtons = document.querySelectorAll('.header__carousel__buttons div');
+      slideButtons.forEach((button) => {
+        button.style.opacity = '0.5';
+        button.style.backgroundColor = 'white';
+      });
+      slideButtons[headerCarousel.currentSlide].style.backgroundColor = '#ffba00';
+      slideButtons[headerCarousel.currentSlide].style.opacity = '1';
+
+      // TODO: Solve last image bug in setTimeout
+      if (headerCarousel.currentSlide === slideButtons.length - 1) {
+        setTimeout(() => {
+          headerCarousel.goTo(0);
+        }, slideChangeInterval);
+      }
+    };
+
+    slideColor();
+
+    const slideButtons = document.querySelectorAll('.header__carousel__buttons div');
+    slideButtons.forEach((button, index) => {
+      button.addEventListener('click', function() {
+        headerCarousel.goTo(index);
+        slideColor();
+      });
     });
 
     setInterval(() => {
-      testCarousel.next();
-    }, 6000);
+      headerCarousel.next();
+    }, slideChangeInterval);
 
-    // News Scroll
+
+
+    // News Carousel
     let newsCarousel = new Siema({
-      selector: masterCarousel[2],
+      selector: masterCarousel[1],
       perPage: 1,
       duration: 400,
       draggable: false,
@@ -56,11 +79,12 @@ $(document).ready(function() {
     });
 
     let newsInterval = "";
+    const newsChangeInterval = 5000;
     const newsContainer = document.querySelector(".news_updates__container");
 
     newsInterval = setInterval(() => {
       newsCarousel.next();
-    }, 5000);
+    }, newsChangeInterval);
 
     newsContainer.addEventListener("mouseover", e => {
       clearInterval(newsInterval);
@@ -69,7 +93,7 @@ $(document).ready(function() {
     newsContainer.addEventListener("mouseleave", () => {
       newsInterval = setInterval(() => {
         newsCarousel.next();
-      }, 5000);
+      }, newsChangeInterval);
     });
   });
 
@@ -80,10 +104,17 @@ $(document).ready(function() {
   });
 
   // For Universities & Colleges carousel
-  $(".rslides").responsiveSlides({
+  $(".uni_col_slides").responsiveSlides({
     auto: true,
     speed: 1000,
     timeout: 7000
+  });
+
+  // For Testimonial Header Carousel
+  $(".header__testimonial__slides").responsiveSlides({
+    auto: true,
+    speed: 800,
+    timeout: 6000
   });
 
   // Dynamic change for Featured Courses
@@ -156,12 +187,12 @@ $(document).ready(function() {
     });
   }
 
-  // Parallax for featured courses
-  $(window).on("scroll", () => {
-    $(".featured_courses").css({
-      "background-position": `100% ${$(document).scrollTop() / 7}%`
-    });
-  });
+  //Parallax for featured courses
+  // $(window).on("scroll", () => {
+  //   $(".featured_courses").css({
+  //     "background-position": `100% ${$(document).scrollTop() / 7}%`
+  //   });
+  // });
 
   // For getting newsletter popups every 10 seconds
   // let newsInterval = null;

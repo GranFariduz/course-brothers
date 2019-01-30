@@ -29,19 +29,19 @@
   }
 
   &__tagline {
-    margin-top: 10px;
+    margin-top: 1rem;
     font-family: "Montserrat";
-    font-weight: 300;
+    font-weight: $medium;
     color: white;
-    font-size: 12px;
+    font-size: 1.6rem;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
   }
 
 }
 
 #logo-svg {
-  width: 300px;
-  height: 100px;
+  width: 30rem;
+  height: 10rem;
 }
