@@ -8,40 +8,6 @@
       
     <div class='navbar_main__appendix__container'>
 
-      <div class="navbar_main__appendix__info">
-        <div class="navbar_main__appendix__info__item">
-          <!-- <h5>credible institutes</h5> -->
-          <span class='tooltip' title='For formal education courses, check the status of the listed universities on the UGC DEB website. https://www.ugc.ac.in/deb/'>
-            <img src="./assets/svg/Icons/white/apartments.svg" />
-          </span>
-        </div>
-        <div class="navbar_main__appendix__info__item">
-          <!-- <h5>transparent information</h5> -->
-          <span class='tooltip' title='CourseBrother.com is not a study center and has no role in admission decisions, 
-            examinations and / or awarding any degree or diploma'>
-            <img src="./assets/svg/Icons/white/information.svg" />
-          </span>
-        </div>
-        <div class="navbar_main__appendix__info__item">
-          <!-- <h5>genuine fee</h5> -->
-          <span class='tooltip' title='CourseBrother.com charges no extra fee. No discount is offered by the course provider of any of the courses listed'>
-            <img src="./assets/svg/Icons/white/give-money.svg" />
-          </span>
-        </div>
-        <div class="navbar_main__appendix__info__item">
-          <!-- <h5>counselling support</h5> -->
-          <span class='tooltip' title='Get expert and dedicated counselling support to make an informed education decision'>
-            <img src="./assets/svg/Icons/white/phone-receiver.svg" />
-          </span>
-        </div>
-        <div class="navbar_main__appendix__info__item">
-          <!-- <h5>study material</h5> -->
-          <span class='tooltip' title='Study material is provided by the respective course providers'>
-            <img src="./assets/svg/Icons/white/books-stack-of-three.svg" />
-          </span>
-        </div>
-      </div>
-
       <div class="navbar_main__appendix__login">
         <span><img src="./assets/svg/Icons/red/log-in.svg" /></span>
         <h5>login</h5>
@@ -210,3 +176,21 @@
   </div>
 
 </div>
+
+<!-- STUDENT_POPUP -->
+<div class="student_popup">
+  <audio>
+    <source src="audio/pop.wav" type="audio/wav">
+    <source src="audio/pop.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio> 
+  <div class="student_popup__image">
+    <img src="assets/svg/Icons/white/user.svg" alt="profile image" />
+  </div>
+  <div class="student_popup__name"></div>
+  <div class="student_popup__city"></div>
+  <div class="student_popup__text">
+    <p></p>
+  </div>
+</div>
+<!-- /STUDENT_POPUP --> 

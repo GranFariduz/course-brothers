@@ -13,7 +13,7 @@ $(document).ready(function() {
       selector: masterCarousel[0],
       perPage: 1,
       duration: 400,
-      draggable: true,
+      draggable: false,
       onChange: slideColor
     });
     
