@@ -1,0 +1,285 @@
+// College Dashboard Styling
+.college_dashboard {
+
+	width: 100%;
+	position: relative;
+
+	&__navbar {
+
+		position: fixed;
+		top: 0;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		padding: 0 1.5rem;
+		height: 5rem;
+		width: 100%;
+		background-color: $rusty-red;
+		box-shadow: $subtle-shadow;
+		justify-content: space-between;
+		z-index: 2;
+
+		&__left {
+
+			display: flex;
+			align-items: center;
+
+			&__toggle {
+				font-size: 2rem;
+				color: white;
+				padding-right: 2rem;
+				cursor: pointer;
+			}
+
+			&__logo {
+				img {
+					width: 9rem;
+				}
+			}
+
+		}
+
+		&__right {
+
+			&__title {
+				position: relative;
+				padding-left: 2rem;
+				height: 2.4rem;
+				border-left: 0.5px solid white;
+				display: flex;
+				align-items: center;
+				color: white;
+				font-size: 1.4rem;
+				
+				i {
+					margin: 0 1rem;
+					cursor: pointer;
+					transform: rotate(0);
+					&:nth-child(1) {
+						color: $light-red;
+					}
+				}
+			}
+
+			&__account {
+
+				width: 22rem;
+				position: absolute;
+				box-shadow: $subtle-shadow;
+				border-radius: 0.5rem;
+				top: -20rem;
+				right: 0rem;
+				opacity: 0;
+				background-color: white;
+				transition: opacity 0.3s;
+
+				&--active {
+					top: 3rem;
+					opacity: 1;
+				}
+
+				&__name {
+					padding: 1.5rem;
+					h4 {
+						color: #7e7e7e;
+						margin: 0;
+					}
+					h5 {
+						color: #acacac;
+						margin: 0;
+						font-weight: $medium;
+					}
+				}
+
+				&__buttons {
+					padding: 1.5rem;
+					background-color: $blush-pink;
+					border-radius: 0 0 0.5rem 0.5rem;
+				}
+
+				&__cp {
+					width: 100%;
+					border: none;
+					padding: 0.7rem;
+					background-color: $rusty-red;
+					border-radius: 0.2rem;
+					text-transform: uppercase;
+					font-size: 1.3rem;
+					color: white;
+					font-weight: $medium;
+					cursor: pointer;
+				}
+
+				&__logout {
+					font-weight: $medium;
+					font-size: 1.2rem;
+					text-transform: uppercase;
+					width: 100%;
+					background-color: white;
+					margin-top: 1rem;
+					color: $rusty-red;
+					border: none;
+					padding: 0.4rem;
+					border-radius: 0.2rem;
+					cursor: pointer;
+				}
+
+			}
+
+		}
+
+	}
+
+	&__body {
+
+		width: 100%;
+		height: 100vh;
+
+		&__sidebar {
+
+			&--inactive {
+				left: -50rem;
+			}
+			
+			position: fixed;
+			left: 0;
+			width: 20%;
+			height: 100%;
+			background-color: #3d3d3d;
+			transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+			&__container {
+				margin-top: 5rem;
+				a {
+					text-decoration: none;
+				}
+			}
+
+			&__item {
+				width: 100%;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				height: 4.5rem;
+				padding-left: 1rem;
+				box-sizing: border-box;
+				transition: 0.1s;
+				i {
+					padding-right: 1.5rem;
+					color: #808080;
+					font-size: 1.6rem;
+				}
+				h3 {
+					color: white;
+					font-weight: $medium;
+					font-size: 1.4rem;
+				}
+				&:hover > i {
+					color: #5a5a5a;
+				}
+				&:hover {
+					background-color: #222222;
+				}
+			}
+
+		}
+
+	}
+
+	&__container {
+		position: absolute;
+		left: 30rem;
+		top: 6rem;
+		width: 76%;
+		transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		&--nopad {
+			left: 2rem;
+			width: 96.5%;
+		}
+	}
+
+	&__main {
+
+		h3 {
+			color: #3d3d3d;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #b6b6b6;
+		}
+
+		&__appendix {
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			&__head {
+				margin: 0;
+				color: #3d3d3d;
+				font-weight: $semiBold;
+				font-size: 1.5rem;
+			}
+
+			&__export {
+				padding: 0.8rem 2rem;
+				border: 1px solid $blush-pink;
+				background-color: white;
+				border-radius: 0.5rem;
+				font-size: 1.3rem;
+				color: $blush-pink;
+				transition: 0.3s;
+				cursor: pointer;
+				i {
+					padding-right: 0.5rem;
+				}
+				&:hover {
+					font-size: 1.35rem;
+					padding: 0.8rem 2.1rem;
+				}
+			}
+
+		}
+
+		&__chart {
+			margin-top: 1rem;
+			width: 100%;
+			height: 30rem;
+		}
+
+		&__table {
+
+			&__head {
+				margin: 0;
+				margin-top: 2rem;
+				color: #3d3d3d;
+				font-weight: $semiBold;
+				font-size: 1.5rem;
+			}
+
+			table {
+				text-align: left;
+				margin-top: 1.5rem;
+				width: 100%;
+				border: 1px solid #949494;
+				box-sizing: border-box;
+				border-collapse: collapse;
+				th {
+					color: white;
+					padding: 1rem;
+					font-size: 1.4rem;
+					font-weight: $medium;
+					background-color: #3d3d3d;
+					border: 1px solid white;
+				}
+				td {
+					padding: 0.5rem 1rem;
+					font-size: 1.3rem;
+					font-weight: $semiBold;
+					border: 1px solid #949494;
+				}
+			}
+
+		}
+
+	}
+
+}

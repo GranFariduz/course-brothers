@@ -18,7 +18,6 @@
       position: relative;
       width: 100%;
       height: 50%;
-      position: relative;
       background: linear-gradient(to right, transparentize($blush-pink, 0.15) 60%, transparentize(black, 0.4)), url('http://yesofcorsa.com/wp-content/uploads/2017/11/Students-Wallpaper-Background-1024x682.jpg');
       background: {
         position: center;
@@ -584,6 +583,32 @@
           }
         }
 
+      }
+
+    }
+
+  }
+
+}
+
+
+// Mobile Styles for User Dashboard
+@media screen and (max-width: 480px) {
+
+  // Dashboard Header
+  .dashboard__header {
+
+    height: 20rem;
+    outline: 2px solid blue;
+
+    &__bg {
+
+      height: 10%;
+      outline: 2px solid red;
+
+      &__circle {
+        height: 3rem;
+        width: 3rem;
       }
 
     }
