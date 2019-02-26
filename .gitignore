@@ -1,5 +1,6 @@
 /assets/images/*.pdf
 /assets/mockups
+/assets/images/cb-jobs*
+/assets/images/Group*
 
-/styles/style.css.map
 /styles/.sass-cache
