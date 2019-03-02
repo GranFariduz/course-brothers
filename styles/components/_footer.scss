@@ -41,7 +41,6 @@
 
   &__get_in_touch {
 
-    // border-right: 1px solid white;
     padding-right: 7rem;
 
     .touch_contact {
@@ -162,6 +161,72 @@
       &:hover {
         background-color: $rusty-red;
         color: white;
+      }
+    }
+
+  }
+
+}
+
+// Responsive Design
+@media screen and (max-width: 480px) {
+
+  .footer {
+
+    height: auto;
+
+    &__container {
+      width: 90%;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 1rem;
+      box-sizing: border-box;
+    }
+
+    &__get_in_touch {
+      width: 100%;
+      margin-bottom: 3rem;
+      .touch_contact {
+        margin-top: 1rem;
+        height: 3rem;
+        .contact_phone {
+          span {
+            font-size: 1.4rem;
+          }
+        }
+        .contact_email {
+          span {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+
+    &__quick_links {
+      margin-bottom: 3rem;
+      .links {
+        padding-top: 0;
+        width: 20rem;
+      }
+    }
+
+    &__policies {
+      margin-left: 0;
+      margin-bottom: 3rem;
+      .links {
+        padding-top: 0;
+        width: 20rem;
+      }
+    }
+
+    &__newsletter {
+      width: 100%;
+      margin-bottom: 3rem;
+      .newsletter_form {
+        margin-top: 0;
+      }
+      input[type='submit'] {
+        font-size: 1.2rem;
       }
     }
 
