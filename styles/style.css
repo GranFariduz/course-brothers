@@ -1230,6 +1230,98 @@ body {
   background-color: #cf2440;
 }
 
+@media screen and (max-width: 480px) {
+  .contact_us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin-top: 14.5rem;
+  }
+  .contact_us__meet {
+    width: 100%;
+    height: 50rem;
+  }
+  .contact_us__meet__container__title {
+    left: 50%;
+    width: 16.2rem;
+    font-size: 1.8rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .contact_us__meet__container__info__item {
+    margin: 1rem 0;
+  }
+  .contact_us__meet__container__info__item__container {
+    width: 22rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact_us__meet__container__info__item__container img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .contact_us__meet__container__info__item__container h4 {
+    font-size: 1.3rem;
+  }
+  .contact_us__ping {
+    width: 100%;
+    height: 60rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .contact_us__ping__container {
+    padding: 4rem 2rem;
+  }
+  .contact_us__ping__container__title {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 11rem;
+  }
+  .contact_us__ping__container h6 {
+    font-size: 1.3rem;
+    margin: 2rem 0;
+  }
+  .contact_us__ping__container form p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+  .contact_us__ping__container form p:nth-child(2) {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top: 2rem;
+  }
+  .contact_us__ping__container form ::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+  .contact_us__ping__container form :-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .contact_us__ping__container form ::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .contact_us__ping__container form ::placeholder {
+    font-size: 1rem;
+  }
+  .contact_us__ping__container form input[type='text'], .contact_us__ping__container form input[type='email'] {
+    height: 1.5rem;
+    width: 12rem;
+  }
+  .contact_us__ping__container form input[type='submit'] {
+    margin-top: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  .contact_us__ping__container form input[type='submit']:hover {
+    background-color: #cf2440;
+  }
+}
+
 .course_detail {
   width: 82%;
   height: auto;
@@ -4331,6 +4423,16 @@ body {
   height: 10rem;
 }
 
+@media screen and (max-width: 480px) {
+  #logo-svg {
+    width: 20rem;
+    height: 5rem;
+  }
+  .preloader__tagline {
+    font-size: 1.2rem;
+  }
+}
+
 .site_features {
   width: 100%;
   height: 50rem;
@@ -4450,7 +4552,7 @@ body {
 .all_testimonials__container {
   margin-top: 14rem;
   width: 100%;
-  height: 100rem;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4461,9 +4563,9 @@ body {
 }
 
 .all_testimonials__aside {
-  height: 100%;
   width: 20%;
   position: relative;
+  z-index: -1;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF5E5B), to(#DB324D));
   background: linear-gradient(to bottom, #FF5E5B, #DB324D);
 }
@@ -4482,7 +4584,7 @@ body {
 
 .all_testimonials__main {
   padding: 5rem;
-  position: relative;
+  width: 80%;
 }
 
 .all_testimonials__main__sep {
@@ -4506,9 +4608,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
   width: 100rem;
-  left: -3rem;
+  margin-left: -12rem;
 }
 
 .all_testimonials__main__item {
@@ -4572,6 +4673,43 @@ body {
   font-size: 1.4rem;
   color: #979797;
   font-weight: 300;
+}
+
+@media screen and (max-width: 480px) {
+  .all_testimonials__aside {
+    width: 30%;
+  }
+  .all_testimonials__aside__mark {
+    top: 3rem;
+    left: -1rem;
+  }
+  .all_testimonials__aside__mark i {
+    font-size: 6rem;
+  }
+  .all_testimonials__main {
+    width: 70%;
+  }
+  .all_testimonials__main__title {
+    font-size: 2rem;
+  }
+  .all_testimonials__main__container {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+    width: 32rem;
+  }
+  .all_testimonials__main__item {
+    width: 30rem;
+    height: 17rem;
+  }
+  .all_testimonials__main__item__content h4 {
+    font-size: 1.5rem;
+  }
+  .all_testimonials__main__item__content h5 {
+    font-size: 1.3rem;
+  }
+  .all_testimonials__main__item__content p {
+    font-size: 1.2rem;
+  }
 }
 
 .top_courses {

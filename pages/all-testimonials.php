@@ -96,7 +96,7 @@
           </div>
           <div class="all_testimonials__main__item">
             <div class="all_testimonials__main__item__img">
-              <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/photogallery/201708/thumb_082117102744.jpg" alt="Image of student" />
+              <img src="http://1.bp.blogspot.com/-hNC-oT6f-fY/TeXxO26yjvI/AAAAAAAAAOY/qfkOqdKkBi8/s1600/platon-photographer-putin-man-of-the-year-portrait.jpg" alt="Image of student" />
             </div>
             <div class="all_testimonials__main__item__content">
               <h4>madara uchiha</h4>
