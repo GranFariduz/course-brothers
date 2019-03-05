@@ -114,7 +114,21 @@
           <div class="blog_detail__see_more__item">
             <img src="../assets/images/contact-bg.jpg" alt="" />
             <div class="blog_detail__see_more__item__title">
-              <h5>how to defraud as well as shyam does</h5>
+              <h5>learn how to defraud as well as shyam does</h5>
+            </div>
+          </div>
+
+          <div class="blog_detail__see_more__item">
+            <img src="../assets/images/about-bg.jpg" alt="" />
+            <div class="blog_detail__see_more__item__title">
+              <h5>does it all work out in the end after fraud schemes</h5>
+            </div>
+          </div>
+
+          <div class="blog_detail__see_more__item">
+            <img src="../assets/images/about-bg.jpg" alt="" />
+            <div class="blog_detail__see_more__item__title">
+              <h5>does it all work out in the end after fraud schemes</h5>
             </div>
           </div>
 
@@ -148,6 +162,8 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">
   </script>
+  <!-- TweenMax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <!-- WOW JS -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
   <!-- CUSTOM JS -->
