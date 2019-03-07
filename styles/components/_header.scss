@@ -157,6 +157,60 @@
   
 }
 
+// Policy Icons Styling
+.policy_icons {
+
+  position: fixed;
+  right: -6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 8;
+  display: flex;
+  transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &--active {
+    right: 0;
+  }
+
+  &__arrow {
+    height: 5.5rem;
+    width: 5.5rem;
+    background-color: white;
+    color: $rusty-red;
+    text-align: center;
+    line-height: 5.5rem;
+    box-shadow: $subtle-shadow;
+    cursor: pointer;
+    i {
+      transition: 0.3s;
+    }
+    &:hover > i {
+      transform: translateX(-0.5rem);
+    }
+  }
+
+  .arrow-turned {
+    transform: rotate(180deg);
+  }
+
+  &__container {
+    padding: 1rem;
+    box-shadow: $subtle-shadow;
+    background-color: darken($bright-yellow, 2%);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+}
+
 
 // Tooltipster Styling
 .tooltipster-base {

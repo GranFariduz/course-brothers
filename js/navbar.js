@@ -49,7 +49,7 @@ window.addEventListener('load', () => {
 // Back to top
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 1000) {
-    $('.back-to-top').css('bottom', '10rem');
+    $('.back-to-top').css('bottom', '8rem');
   } else {
     $('.back-to-top').css('bottom', '-10rem');
   }
