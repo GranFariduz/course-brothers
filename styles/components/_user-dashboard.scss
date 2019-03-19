@@ -109,7 +109,7 @@
       &__info {
 
         width: 100%;
-        margin-top: 17rem;
+        margin-top: 12rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -199,7 +199,7 @@
         }
 
         &__cv {
-          width: 15%;
+          width: 16%;
           button {
             width: 100%;
             padding: 1.5rem 2rem;
@@ -225,8 +225,8 @@
 
       &__navbar {
 
-        margin-top: 8rem;
-        padding: 3rem;
+        margin-top: 5rem;
+        padding: 0.5rem;
         box-shadow: 0 0 3px 1px #00000042;
         border-radius: 0.5rem;
         box-sizing: border-box; 
@@ -242,7 +242,7 @@
           width: 100vw;
           height: 5rem;
           left: 0;
-          top: 6.3rem;
+          top: 9.4rem;
           background-color: white;
         }
 
@@ -275,7 +275,7 @@
             left: 0;
             right: 0;
             transform: scaleX(1.2);
-            bottom: -2.35rem;
+            bottom: -2rem;
             height: 0.17rem;
             background-color: $blush-pink;
           }
