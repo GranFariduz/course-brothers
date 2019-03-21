@@ -190,11 +190,13 @@
         margin-top: 1rem;
         height: 3rem;
         .contact_phone {
+          h4 { margin: 0; }
           span {
             font-size: 1.4rem;
           }
         }
         .contact_email {
+          h4 { margin: 0; }
           span {
             font-size: 1.4rem;
           }

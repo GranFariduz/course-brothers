@@ -2864,8 +2864,14 @@ body {
     margin-top: 1rem;
     height: 3rem;
   }
+  .footer__get_in_touch .touch_contact .contact_phone h4 {
+    margin: 0;
+  }
   .footer__get_in_touch .touch_contact .contact_phone span {
     font-size: 1.4rem;
+  }
+  .footer__get_in_touch .touch_contact .contact_email h4 {
+    margin: 0;
   }
   .footer__get_in_touch .touch_contact .contact_email span {
     font-size: 1.4rem;
