@@ -8,6 +8,16 @@
       
     <div class='navbar_main__appendix__container'>
 
+      <!-- will show only in mobile view -->
+      <div class="navbar_main__appendix__hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <!-- will show only in mobile view -->
+      <div class="navbar_main__appendix__logo">
+        <a href='../index.php'><img src="../assets/svg/cb-logo.svg" /></a>
+      </div>
+
       <div class="navbar_main__appendix__login">
         <span><img src="./assets/svg/Icons/red/log-in.svg" /></span>
         <h5>login</h5>
@@ -20,7 +30,7 @@
       
       <div class="navbar_main__appendix__cart">
         <h5>cart</h5>
-        <span><img src="./assets/svg/Icons/white/shopping-cart.svg" /></span>
+        <span><img src="../assets/svg/Icons/white/shopping-cart.svg" /></span>
       </div>
 
     </div>  
@@ -32,13 +42,18 @@
     <div class='navbar_main__header__container'>
 
       <div class="navbar_main__header__logo">
-        <a href='../index.php'><img src="./assets/svg/cb-logo.svg" /></a>
+        <a href='../index.php'><img src="../assets/svg/cb-logo.svg" /></a>
       </div>
 
       <div class="navbar_main__header__search">
         <form>
           <input type="text" placeholder='search for courses     eg: mba, bba' />
-          <input type="submit" value="LET'S GO!">
+          <button class='navbar_main__header__search__button'>
+            <!-- will show only in desktop view -->
+            <span>LET'S GO</span>
+            <!-- will show only in mobile view -->
+            <i class='fa fa-search'></i>
+          </button>
         </form>
       </div>
 
@@ -194,3 +209,45 @@
   </div>
 </div>
 <!-- /STUDENT_POPUP --> 
+
+<!-- MOBILE_SIDEBAR -->
+<div class="mob__sidebar">
+  <div class="mob__sidebar__closer">
+    <i class='fa fa-times'></i>
+  </div>
+  <div class="mob__sidebar__container">
+
+    <div class="mob__sidebar__login">
+      <button>LOG IN / REGISTER</button>
+    </div>
+
+    <div class="mob__sidebar__sep"></div>
+
+    <div class="mob__sidebar__courses">
+      <h3>CATEGORIES</h3>
+      <div class="mob__sidebar__courses__container">
+        <a href="#">ALL COLLEGES</a>
+        <a href="#">PG COURSES</a>
+        <a href="#">UG COURSES</a>
+        <a href="#">DIPLOMA</a>
+        <a href="#">CERTIFICATE</a>
+      </div>
+    </div>
+
+    <div class="mob__sidebar__sep"></div>
+
+    <div class="mob__sidebar__contact">
+      <h3>CONTACT</h3>
+      <div class="mob__sidebar__contact__phone">
+        <h5>PHONE</h5>
+        <h6>+91 7044356471</h6>
+      </div>
+      <div class="mob__sidebar__contact__email">
+        <h5>EMAIL</h5>
+        <h6>shyamdalmia28@gmail.com</h6>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- MOBILE_SIDEBAR -->

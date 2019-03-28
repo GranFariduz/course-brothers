@@ -24,6 +24,9 @@
       height: 100%;
     }
 
+    &__hamburger {
+      display: none;
+    }
 
     &__cart {
       width: 80%;
@@ -135,7 +138,7 @@
         color: rgb(187, 187, 187);
         font-size: 1.3rem;
       }
-      input[type='submit'] {
+      &__button {
         border: none;
         box-shadow: $subtle-shadow;
         color: white;
@@ -150,6 +153,9 @@
         transition: 0.4s;
         &:hover {
           background-color: darken($rusty-red, 3%);
+        }
+        i {
+          display: none;
         }
       }
     }
@@ -331,6 +337,192 @@
     text-align: center;
     font-size: 1.3rem;
     font-weight: $medium;
+  }
+
+}
+
+// Mobile Sidebar Styling
+.mob__sidebar {
+  display: none;
+}
+
+// Responsive Design
+@media screen and (max-width: 480px) {
+
+  .navbar_main {
+
+    width: 100vw;
+
+    &__appendix {
+      height: 4rem;
+      &__container {
+        width: 100%;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__login {
+        display: none;
+      }
+      &__register {
+        display: none;
+      }
+      &__cart {
+        all: initial;
+        padding-right: 1.5rem;
+        h5 {
+          display: none;
+        }
+        img {
+          height: 1.8rem;
+          width: 1.8rem;
+        }
+      }
+      &__hamburger {
+        display: block;
+        color: white;
+        font-size: 2.1rem;
+        padding-left: 1.5rem;
+      }
+      &__logo {
+        img {
+          height: 2.5rem;
+        }
+      }
+    }
+
+    &__header {
+
+      height: 7rem;
+
+      &__contact {
+        display: none;
+      }
+
+      &__container {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      &__logo {
+        display: none;
+      }
+
+      &__search {
+        input[type='text'] {
+          width: 29rem;
+        }
+        ::placeholder {
+          font-size: 1.2rem;
+        }
+        &__button {
+          i {
+            display: block;
+            padding: 0.1rem;
+          }
+          span {
+            display: none;
+          }
+        }
+      }
+
+    }
+
+    &__courses {
+      display: none;
+    }
+    
+  }
+
+  .mob__sidebar {
+
+    display: block;
+    height: 100vh;
+    width: 28rem;
+    background: linear-gradient(to right bottom, white, #f0f0f0, white);
+    position: fixed;
+    top: 0;
+    left: -30rem;
+    z-index: 10;
+    box-shadow: 2px 0 20px 1px rgba(0, 0, 0, 0.486);
+    padding: 2rem;
+    box-sizing: border-box;
+    transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+
+    &__login {
+      button {
+        border: 2px solid $rusty-red;
+        padding: 1rem;
+        color: $rusty-red;
+        font-weight: $semiBold;
+        font-size: 1.3rem;
+        background-color: transparent;
+        border-radius: 0.5rem;
+      }
+    }
+
+    &__sep {
+      margin: 2rem 0;
+      height: 0.1rem;
+      width: 100%;
+      background-color: darkgrey;
+    }
+
+    &__courses {
+      h3 {
+        color: grey;
+        font-size: 1.6rem;
+      }
+      a {
+        display: block;
+        margin: 1rem 0;
+        color: $rusty-red;
+        &:link {
+          font-size: 1.2rem;
+          font-weight: $medium;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__contact {
+      h3 {
+        color: grey;
+        font-size: 1.6rem;
+      }
+      &__phone {
+        h5 {
+          margin: 0;
+          color: $light-red;
+        }
+        h6 {
+          margin: 0.5rem 0 0 0;
+          color: darkgrey;
+          font-size: 1.3rem;
+          font-weight: $medium;
+        }
+      }
+      &__email {
+        margin-top: 1rem;
+        h5 {
+          margin: 0;
+          color: $light-red;
+        }
+        h6 {
+          margin: 0.5rem 0 0 0;
+          color: darkgrey;
+          font-size: 1.3rem;
+          font-weight: $medium;
+        }
+      }
+    }
+
+    &__closer {
+      font-size: 2.5rem;
+      color: $rusty-red;
+      padding-bottom: 1rem;
+    }
+
   }
 
 }
