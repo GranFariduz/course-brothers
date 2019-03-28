@@ -28,7 +28,7 @@
 
 	<!-- COLLEGE_DASHBOARD_LOGIN -->
   <div class="college_dashboard__login">
-
+		
   </div>
   <!-- /COLLEGE_DASHBOARD_LOGIN -->
 

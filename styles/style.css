@@ -1741,6 +1741,7 @@ body {
 .course_detail__body__main .main_content {
   width: 340rem;
   margin-right: 10rem;
+  padding-bottom: 2rem;
   border-bottom: 2px solid #d4d4d4;
 }
 
@@ -1754,6 +1755,28 @@ body {
   font-size: 1.4rem;
   color: #c0bebe;
   line-height: 1.7rem;
+}
+
+.course_detail__body__main .main_content table, .course_detail__body__main .main_content th, .course_detail__body__main .main_content td {
+  border: 1px solid #FF8B9C;
+  padding: 1rem;
+}
+
+.course_detail__body__main .main_content table {
+  width: 100%;
+  border: none;
+  padding: 0;
+}
+
+.course_detail__body__main .main_content th {
+  font-size: 1.4rem;
+  text-align: left;
+  background-color: #DB324D;
+  color: white;
+}
+
+.course_detail__body__main .main_content td {
+  font-size: 1.4rem;
 }
 
 .course_detail__body__main .etabs {

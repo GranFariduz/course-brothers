@@ -237,6 +237,7 @@
       .main_content {
         width: 340rem;
         margin-right: 10rem;
+        padding-bottom: 2rem;
         border-bottom: 2px solid rgb(212, 212, 212);
         &__title {
           color: $light-red;
@@ -247,6 +248,24 @@
           font-size: 1.4rem;
           color: rgb(192, 190, 190);
           line-height: 1.7rem;
+        }
+        table, th, td {
+          border: 1px solid $light-red;
+          padding: 1rem;
+        }
+        table {
+          width: 100%;
+          border: none;
+          padding: 0;
+        }
+        th {
+          font-size: 1.4rem;
+          text-align: left;
+          background-color: $rusty-red;
+          color: white;
+        }
+        td {
+          font-size: 1.4rem;
         }
       }
 

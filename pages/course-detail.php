@@ -115,22 +115,78 @@
             <div id="tabs-structure">
               <h3 class='main_content__title'>COURSE STRUCTURE</h3>
               <p class='main_content__body'>
-                1ST SEMESTER <br><br>
-                Networking and Marketing<br>
-                Supply Chain Basics
-                <br><br><br>
-                2ND SEMESTER <br><br>
-                Marketing Strategies<br>
-                Internet of Things Basics
+              <table>
+                  <tr>
+                    <th>1ST SEMESTER</th>
+                    <th>2ND SEMESTER</th>
+                    <th>3RD SEMESTER</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      Supply Chain basics <br>
+                      Networking Basics
+                    </td>
+                    <td>
+                      Business Management <br>
+                      Book keeping
+                    </td>
+                    <td>
+                      Basics of C Programming <br>
+                      Basics of Computer Applications
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>4TH SEMESTER</th>
+                    <th>5TH SEMESTER</th>
+                    <th>6TH SEMESTER</th>                    
+                  </tr>
+                  <tr>
+                    <td>
+                      Advanced C Programming <br>
+                      Web Design Basics
+                    </td>
+                    <td>
+                      Graphic Design Basics <br>
+                      Advanced Web Design
+                    </td>
+                    <td>
+                      Basics of Java Programming <br>
+                      Advanced Java Programming
+                    </td>
+                  </tr>
+                </table>
               </p>
             </div>
 
             <div id="tabs-fee">
               <h3 class='main_content__title'>COURSE FEE</h3>
               <p class='main_content__body'>
-                1ST SEMESTER - Rs 4000 <br> 
-                2ND SEMESTER - Rs 5000 <br>
-                3RD SEMESTER - Rs 4400
+                <table>
+                  <tr>
+                    <th>1ST SEMESTER</th>
+                    <th>2ND SEMESTER</th>
+                  </tr>
+                  <tr>
+                    <td>Rs 4000</td>
+                    <td>Rs 6000</td>
+                  </tr>
+                  <tr>
+                    <th>3RD SEMESTER</th>
+                    <th>4TH SEMESTER</th>
+                  </tr>
+                  <tr>
+                    <td>Rs 4000</td>
+                    <td>Rs 5000</td>
+                  </tr>
+                  <tr>
+                    <th>5TH SEMESTER</th>
+                    <th>6TH SEMESTER</th>
+                  </tr>
+                  <tr>
+                    <td>Rs 5000</td>
+                    <td>Rs 7000</td>
+                  </tr>
+                </table>
               </p>
             </div>
 
