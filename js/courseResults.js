@@ -15,3 +15,16 @@ $(document).ready(function() {
   });
 
 });
+
+// For filter sidebar in mobile view
+const filterButton = document.querySelector('.course_results__mob__filter');
+const filterSidebar = document.querySelector('.filter_results');
+const filterCloser = document.querySelector('.filter_results__finisher__close');
+
+filterButton.addEventListener('click', () => {
+  filterSidebar.style.left = '0';
+});
+
+filterCloser.addEventListener('click', () => {
+  filterSidebar.style.left = '-101vw';
+});

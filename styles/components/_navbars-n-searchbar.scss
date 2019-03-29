@@ -28,6 +28,10 @@
       display: none;
     }
 
+    &__logo {
+      display: none;
+    }
+
     &__cart {
       width: 80%;
       margin: 0 auto;
@@ -410,7 +414,7 @@
 
       &__search {
         input[type='text'] {
-          width: 29rem;
+          width: 26rem;
         }
         ::placeholder {
           font-size: 1.2rem;

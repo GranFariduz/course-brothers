@@ -44,6 +44,17 @@
       <!-- FILTER_RESULTS -->
       <div class="filter_results">
 
+        <!-- will only show in mobile view -->
+        <div class="filter_results__finisher">
+          <div class="filter_results__finisher__apply">
+            apply filters
+          </div>
+          <div class="filter_results__finisher__close">
+            <i class='fa fa-times'></i>
+            CLOSE
+          </div>
+        </div>
+
         <div class="filter_results__head">
           <h3>filter results</h3>
           <button>clear all</button>
@@ -195,6 +206,11 @@
 
       <!-- COURSE_RESULTS -->
       <div class="course_results">
+
+        <!-- will show only in mobile view -->
+        <div class="course_results__mob__filter">
+          <i class='fa fa-filter'></i>
+        </div>
 
         <div class="course_results__head">
           <h3>showing <b>2</b> results for '<b>pgd mba</b>'</h3>

@@ -211,7 +211,7 @@ function showStudentPopup() {
   }, rand);
 }());
 
-
+// -------------------------------
 // For toggling sidebar in mobile version
 const hambToggler = document.querySelector('.navbar_main__appendix__hamburger');
 const sidebarMenu = document.querySelector('.mob__sidebar');
