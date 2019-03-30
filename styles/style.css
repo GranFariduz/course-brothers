@@ -809,6 +809,32 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .latest_blogs {
+    height: auto;
+  }
+  .latest_blogs__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .latest_blogs__item {
+    width: 90%;
+    height: 100%;
+    margin: 3rem 0;
+    overflow: visible;
+  }
+  .latest_blogs__item__bg {
+    height: 16rem;
+  }
+  .latest_blogs__item__continue {
+    bottom: -2rem;
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.199);
+            box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.199);
+  }
+}
+
 .college_dashboard {
   width: 100%;
   position: relative;
@@ -2737,6 +2763,12 @@ body {
   font-weight: 500;
 }
 
+@media screen and (max-width: 480px) {
+  .featured_courses {
+    display: none;
+  }
+}
+
 .footer {
   width: 100%;
   height: 50vh;
@@ -2974,6 +3006,7 @@ body {
 @media screen and (max-width: 480px) {
   .footer {
     height: auto;
+    margin-top: 2rem;
   }
   .footer__container {
     width: 90%;
@@ -3287,6 +3320,42 @@ body {
   padding: 0.5rem;
 }
 
+@media screen and (max-width: 480px) {
+  .main-container {
+    margin-top: -3rem;
+  }
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__testimonial {
+    width: 100%;
+  }
+  .header__carousel {
+    height: 30rem;
+    width: 100%;
+  }
+  .header__carousel__item img {
+    height: 35rem;
+    width: 100%;
+  }
+  .header__carousel__item__content {
+    left: 50%;
+    top: 35%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .header__carousel__item__content h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .policy_icons {
+    display: none;
+  }
+}
+
 .uni_and_col {
   height: 28vh;
   width: 100%;
@@ -3321,6 +3390,27 @@ body {
 .uni_and_col .rslides li img {
   height: 8rem;
   width: 15rem;
+}
+
+@media screen and (max-width: 480px) {
+  .uni_and_col {
+    height: auto;
+    margin-top: 30rem;
+    padding: 1rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .uni_and_col .rslides {
+    width: 90%;
+  }
+  .uni_and_col .rslides li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .uni_and_col .rslides li img {
+    height: 6rem;
+    width: 12rem;
+  }
 }
 
 .login_modal {
@@ -4453,6 +4543,9 @@ body {
     font-size: 2.1rem;
     padding-left: 1.5rem;
   }
+  .navbar_main__appendix__logo {
+    display: block;
+  }
   .navbar_main__appendix__logo img {
     height: 2.5rem;
   }
@@ -4891,6 +4984,58 @@ body {
   color: #FF8B9C;
 }
 
+@media screen and (max-width: 480px) {
+  .news_updates {
+    height: 50rem;
+  }
+  .news_updates__back, .news_updates__next {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .news_updates__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news_updates__head {
+    width: 100%;
+    height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news_updates__head h2 {
+    all: initial;
+    text-align: center;
+    color: white;
+    font-family: "LeagueSpartan";
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .news_updates__main {
+    height: 35rem;
+  }
+  .news_updates__main__container {
+    display: block;
+  }
+  .news_updates__main__section__content__item h3 {
+    font-size: 1.3rem;
+  }
+  .news_updates__main__section__content__item p {
+    font-size: 1.1rem;
+  }
+  .news_updates__main__section__content__item a:link {
+    font-size: 1.2rem;
+  }
+}
+
 .policy_container {
   height: 60vh;
 }
@@ -5093,6 +5238,25 @@ body {
 .site_features__section .section_text p {
   font-weight: 300;
   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 480px) {
+  .site_features {
+    height: auto;
+  }
+  .site_features__title {
+    font-size: 2.4rem;
+    letter-spacing: 0;
+  }
+  .site_features__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .site_features__section {
+    width: 100%;
+  }
 }
 
 .all_testimonials__container {
@@ -5416,6 +5580,12 @@ body {
   font-weight: 500;
   color: #DB324D;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .top_courses {
+    display: none;
+  }
 }
 
 .user_dashboard {

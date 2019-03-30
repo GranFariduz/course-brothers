@@ -7,7 +7,6 @@
   margin-top: 14rem;
   display: flex;
 
-
   &__testimonial {
 
     width: 30%;
@@ -217,4 +216,47 @@
   color: $rusty-red;
   text-align: center;
   padding: 0.5rem;
+}
+
+// Responsive Design
+@media screen and (max-width: 480px) {
+
+  .main-container {
+    margin-top: -3rem;
+  }
+
+  .header {
+
+    flex-direction: column;
+
+    &__testimonial {
+      width: 100%;
+    }
+
+    &__carousel {
+      height: 30rem;
+      width: 100%;
+      &__item {
+        img {
+          height: 35rem;
+          width: 100%;
+        }
+        &__content {
+          left: 50%;
+          top: 35%;
+          transform: translate(-50%, -50%);
+          h4 {
+            font-size: 1.3rem;
+            font-weight: $medium;
+          }
+        }
+      }
+    }
+
+  }
+
+  .policy_icons {
+    display: none;
+  }
+
 }

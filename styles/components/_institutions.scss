@@ -29,3 +29,25 @@
   }
 
 }
+
+// Responsive Design
+@media screen and (max-width: 480px) {
+
+  .uni_and_col {
+    height: auto;
+    margin-top: 30rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    .rslides {
+      width: 90%;
+      li {
+        flex-wrap: wrap;
+        img {
+          height: 6rem;
+          width: 12rem;
+        }
+      }
+    }
+  }
+
+}

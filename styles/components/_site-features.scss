@@ -75,3 +75,22 @@
   }
 
 }
+
+// Responsive Design
+@media screen and (max-width: 480px) {
+
+  .site_features {
+    height: auto;
+    &__title {
+      font-size: $section_title_size - 0.4;
+      letter-spacing: 0;
+    }
+    &__container {
+      flex-direction: column;
+    }
+    &__section {
+      width: 100%;
+    }
+  }
+
+}

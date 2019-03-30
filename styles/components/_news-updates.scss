@@ -118,3 +118,63 @@
   }
 
 }
+
+// Responsive Design
+@media screen and (max-width: 480px) {
+
+  .news_updates {
+
+    height: 50rem;
+
+    &__back, &__next {
+      padding: 1rem;
+      font-size: 2rem;
+    }
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__head {
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        all: initial;
+        text-align: center;
+        color: white;
+        font-family: $league;
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+    }
+    
+    &__main {
+      height: 35rem;
+      &__container {
+        display: block;
+      }
+      &__section {
+        &__content {
+          &__item {
+            h3 {
+              font-size: 1.3rem;
+            }
+            p {
+              font-size: 1.1rem;
+            }
+            a {
+              &:link {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

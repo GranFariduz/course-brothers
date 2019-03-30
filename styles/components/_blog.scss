@@ -453,3 +453,28 @@
   }
 
 }
+
+// Responsive Design
+@media screen and (max-width: 480px) {
+
+  .latest_blogs {
+    height: auto;
+    &__container {
+      flex-direction: column;
+    }
+    &__item {
+      width: 90%;
+      height: 100%;
+      margin: 3rem 0;
+      overflow: visible;
+      &__bg {
+        height: 16rem;
+      }
+      &__continue {
+        bottom: -2rem;
+        box-shadow: $subtle-shadow;
+      }
+    }
+  }
+
+}
