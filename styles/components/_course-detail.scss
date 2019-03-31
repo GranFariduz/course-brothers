@@ -441,6 +441,68 @@
       }
     }
 
+    &__body {
+      &__nav {
+        padding: 1rem;
+        flex-direction: row-reverse;
+        box-sizing: border-box;
+        height: auto;
+        flex-wrap: wrap;
+        align-content: center;
+        button {
+          margin-top: 1rem;
+          padding: 1rem;
+          font-size: 1.5rem;
+          width: 100%;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          justify-content: space-between;
+          width: 98%;
+          border-bottom: 1px solid transparent;
+          li {
+            font-size: 1.3rem;
+            margin: 0;
+          }
+        }
+      }
+      &__main {
+        flex-direction: column;
+        padding: 2rem;
+        .main_content {
+          width: 100%;
+          border: none;
+          margin: 0;
+          &__title {
+            font-size: 1.3rem;
+          }
+          th {
+            font-size: 1.2rem;
+          }
+          td {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .related_courses {
+      padding: 1rem 2em 2rem 2rem;
+      &__title {
+        font-size: 1.4rem;
+      }
+      &__container {
+        flex-direction: column;
+        margin-top: 0;
+      }
+      &__item {
+        width: 90%;
+        height: 20rem;
+        margin: 2rem 0 0 0;
+      }
+    }
+
   }
 
 }
