@@ -3610,10 +3610,20 @@ body {
           align-items: center;
   height: 20rem;
   width: 100%;
+  position: relative;
+}
+
+.login_modal__main__form__showpw {
+  position: absolute;
+  right: 2rem;
+  top: 8.5rem;
+  color: #DB324D;
+  cursor: pointer;
 }
 
 .login_modal__main__form input[type='email'],
-.login_modal__main__form input[type='password'] {
+.login_modal__main__form input[type='password'],
+.login_modal__main__form input[type='text'] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1.8rem;
@@ -3849,7 +3859,7 @@ body {
 }
 
 .register_modal__submit {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1.4rem 3rem 1rem 3rem;
   background-color: #DB324D;
   color: white;
@@ -3934,7 +3944,7 @@ body {
 
 .register_modal__main__form {
   margin-right: -6.5rem;
-  margin-top: 3rem;
+  margin-top: 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3945,8 +3955,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 20rem;
+  height: 16rem;
   width: 100%;
+  position: relative;
+}
+
+.register_modal__main__form__showpw1 {
+  position: absolute;
+  right: 2rem;
+  top: 17rem;
+  color: #DB324D;
+  cursor: pointer;
+}
+
+.register_modal__main__form__showpw2 {
+  right: 2rem;
+  top: 22rem;
+  position: absolute;
+  color: #DB324D;
+  cursor: pointer;
 }
 
 .register_modal__main__form input[type='text'],

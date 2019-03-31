@@ -98,9 +98,19 @@
       align-items: center;
       height: 20rem;
       width: 100%;
+      position: relative;
       
+      &__showpw {
+        position: absolute;
+        right: 2rem;
+        top: 8.5rem;
+        color: $rusty-red;
+        cursor: pointer;
+      }
+
       input[type='email'], 
-      input[type='password'] {
+      input[type='password'],
+      input[type='text'] {
         box-sizing: border-box;
         padding: 1.8rem;
         width: 100%;
@@ -280,7 +290,7 @@
   }
 
   &__submit {
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 1.4rem 3rem 1rem 3rem;
     background-color: $rusty-red;
     color: white;
@@ -351,12 +361,29 @@
     &__form {
 
       margin-right: -6.5rem;
-      margin-top: 3rem;
+      margin-top: 0rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 20rem;
+      height: 16rem;
       width: 100%;
+      position: relative;
+
+      &__showpw1 {
+        position: absolute;
+        right: 2rem;
+        top: 17rem;
+        color: $rusty-red;
+        cursor: pointer;
+      }
+
+      &__showpw2 {
+        right: 2rem;
+        top: 22rem;
+        position: absolute;
+        color: $rusty-red;
+        cursor: pointer;
+      }
       
       input[type='text'],
       input[type='email'], 
