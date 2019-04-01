@@ -5135,6 +5135,144 @@ body {
   }
 }
 
+.news_events__header {
+  height: 15rem;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#00000077), to(#00000077)), url("../assets/images/courses_img/ins1.jpg");
+  background: linear-gradient(to right, #00000077, #00000077), url("../assets/images/courses_img/ins1.jpg");
+  background-size: cover;
+  background-position: 20% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news_events__header__title {
+  color: white;
+  font-family: "LeagueSpartan";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.news_events__main {
+  width: 82%;
+  margin: 3rem auto;
+  border: 2px solid #DB324D;
+  border-radius: 0.5rem;
+}
+
+.news_events__main__head {
+  background-color: #DB324D;
+  border-radius: 0.3rem 0.3rem 0 0;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(219, 50, 77, 0.8)), to(rgba(219, 50, 77, 0.8))), url("https://study.eshipglobal.com/img/StudentsIMG.jpg");
+  background: linear-gradient(to right, rgba(219, 50, 77, 0.8), rgba(219, 50, 77, 0.8)), url("https://study.eshipglobal.com/img/StudentsIMG.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.news_events__main__head h4 {
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.news_events__main__head h6 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.news_events__main__share {
+  background-color: #ffba00;
+  padding: 1rem;
+  margin: 1rem 1rem 0 1rem;
+  color: white;
+  display: inline-block;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.news_events__main__content {
+  padding: 1rem;
+}
+
+.news_events__main__content p {
+  color: darkgrey;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.news_events__more_updates {
+  width: 82%;
+  margin: 2rem auto;
+}
+
+.news_events__more_updates__title {
+  text-transform: uppercase;
+  color: #DB324D;
+  font-size: 2rem;
+  font-family: "LeagueSpartan";
+}
+
+.news_events__more_updates__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news_events__more_updates__item {
+  width: 32%;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.199);
+          box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.199);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.news_events__more_updates__item h4 {
+  text-transform: uppercase;
+  color: black;
+}
+
+.news_events__more_updates__item h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #DB324D;
+  font-weight: 700;
+}
+
+.news_events__more_updates__item h5 {
+  color: #b6b6b6;
+  font-weight: 500;
+}
+
+.news_events__more_updates__item:hover {
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.329);
+          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.329);
+}
+
 .policy_container {
   height: 60vh;
 }

@@ -178,3 +178,145 @@
   }
 
 }
+
+// News and Events page styling
+.news_events {
+
+  &__header {
+    height: 15rem;
+    width: 100%;
+    background: linear-gradient(
+              to right, 
+              #00000077, 
+              #00000077), 
+              url('../assets/images/courses_img/ins1.jpg');
+    background: {
+      size: cover;
+      position: 20% 10%;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__title {
+      color: white;
+      font-family: $league;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+
+  &__main {
+
+    width: 82%;
+    margin: 3rem auto;
+    border: 2px solid $rusty-red;
+    border-radius: 0.5rem;
+
+    &__head {
+      background-color: $rusty-red;
+      border-radius: 0.3rem 0.3rem 0 0;
+      padding: 1rem;
+      box-sizing: border-box;
+      background: linear-gradient(
+              to right, 
+              transparentize($rusty-red, 0.2), 
+              transparentize($rusty-red, 0.2)), 
+              url('https://study.eshipglobal.com/img/StudentsIMG.jpg');
+      background: {
+        size: cover;
+        position: 50% 50%;
+      }
+      h4 {
+        color: white;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+      }
+      h6 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+    }
+
+    &__share {
+      background-color: $bright-yellow;
+      padding: 1rem;
+      margin: 1rem 1rem 0 1rem;
+      color: white;
+      display: inline-block;
+      border-radius: 0.5rem;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    &__content {
+      padding: 1rem;
+      p {
+        color: darkgrey;
+        font-size: 1.5rem;
+        font-weight: $medium;
+      }
+    }
+
+  }
+
+  &__more_updates {
+
+    width: 82%;
+    margin: 2rem auto;
+
+    &__title {
+      text-transform: uppercase;
+      color: $rusty-red;
+      font-size: 2rem;
+      font-family: $league;
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 32%;
+      background-color: white;
+      box-shadow: $subtle-shadow;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: 0.3s;
+      h4 {
+        text-transform: uppercase;
+        color: black;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        color: $rusty-red;
+        font-weight: $bold;
+      }
+      h5 {
+        color: #b6b6b6;
+        font-weight: $medium;
+      }
+      &:hover {
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.329);
+      }
+    }
+
+  }
+
+}
+
+// Responsive Design for News and Events page
+@media screen and (max-width: 480px) {
+
+  .news_events {
+
+  }
+
+}
