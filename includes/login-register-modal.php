@@ -25,6 +25,8 @@
         <div class="login_modal__main__oauth__item"></div>
       </div>
     </div>
+    <!-- will show only in mobile view -->
+    <a class='mob__login_to_reg' href="#">Don't have an account? Register here</a>
   </div>
   <div class="login_modal__appendix">
     <div class="login_modal__appendix__head">
@@ -67,6 +69,8 @@
       <div class="register_modal__submit">register</div>
       <button type='submit'>register</button>
     </form>
+    <!-- will show only in mobile view -->
+    <span class='mob__reg_to_login' href="#">Already have an account? Login here</span>
   </div>
   <div class="register_modal__appendix">
     <div class="register_modal__appendix__head">

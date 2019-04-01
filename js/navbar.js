@@ -67,8 +67,14 @@ const loginButton = document.querySelector('.navbar_main__appendix__login');
 const loginModal = document.querySelector('.login_modal');
 const loginModalBackdrop = document.querySelector('.login_modal__backdrop');
 const loginModalClose = document.querySelector('.login_modal__close');
+const mobLoginButton = document.querySelector('.mob__sidebar__login');
 
 loginButton.addEventListener('click', function() {
+  loginModalBackdrop.classList.add('login_modal__backdrop--active');
+  loginModal.classList.add('login_modal--active');
+});
+
+mobLoginButton.addEventListener('click', function() {
   loginModalBackdrop.classList.add('login_modal__backdrop--active');
   loginModal.classList.add('login_modal--active');
 });
@@ -108,13 +114,26 @@ replacedRegisterSubmit.addEventListener('click', () => {
 
 // Interchanging Register and Login Modals
 const registerHereButton = document.querySelector('.login_modal__appendix__register');
+const registerHereMob = document.querySelector('.mob__login_to_reg');
 const loginHereButton = document.querySelector('.register_modal__appendix__login');
+const loginHereMob = document.querySelector('.mob__reg_to_login');
 
 registerHereButton.addEventListener('click', () => {
   registerModal.classList.add('register_modal--active');
   loginModal.classList.remove('login_modal--active');
 });
+
+registerHereMob.addEventListener('click', () => {
+  registerModal.classList.add('register_modal--active');
+  loginModal.classList.remove('login_modal--active');
+});
+
 loginHereButton.addEventListener('click', () => {
+  loginModal.classList.add('login_modal--active');
+  registerModal.classList.remove('register_modal--active');
+});
+
+loginHereMob.addEventListener('click', () => {
   loginModal.classList.add('login_modal--active');
   registerModal.classList.remove('register_modal--active');
 });
@@ -222,6 +241,10 @@ hambToggler.addEventListener('click', () => {
 });
 
 sidebarMenuCloser.addEventListener('click', () => {
+  sidebarMenu.style.left = '-30rem';
+});
+
+mobLoginButton.addEventListener('click', () => {
   sidebarMenu.style.left = '-30rem';
 });
 
