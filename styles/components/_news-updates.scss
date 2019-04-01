@@ -317,6 +317,33 @@
 
   .news_events {
 
+    &__main {
+      width: 90%;
+      &__head {
+        h4 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    &__more_updates {
+      width: 90%;
+      &__item {
+        width: 48%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        h4 {
+          font-size: 1.1rem;
+        }
+        h3 {
+          font-size: 1.2rem;
+        }
+        h5 {
+          font-size: 1rem;
+        }
+      }
+    }
+
   }
 
 }
