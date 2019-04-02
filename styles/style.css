@@ -1142,6 +1142,128 @@ body {
   border: 1px solid #949494;
 }
 
+.college_dashboard__login {
+  width: 100vw;
+  height: 100vh;
+  background: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/HlvPz7x3ej0l637pw/videoblocks-two-dark-corporate-high-rise-buildings-in-new-york_rvxnuemig_thumbnail-full01.png");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.college_dashboard__login__container {
+  background-color: rgba(219, 50, 77, 0.8);
+  padding: 1rem;
+  width: 30%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.college_dashboard__login__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.college_dashboard__login__header__logo {
+  border-right: 1px solid white;
+  padding-right: 2rem;
+}
+
+.college_dashboard__login__header__logo img {
+  width: 12rem;
+}
+
+.college_dashboard__login__header__title h4 {
+  text-transform: uppercase;
+  padding-left: 2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.college_dashboard__login__form {
+  position: relative;
+}
+
+.college_dashboard__login__form form {
+  margin: 2rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.college_dashboard__login__form form input[type='text'],
+.college_dashboard__login__form form input[type='email'],
+.college_dashboard__login__form form input[type='password'] {
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  color: grey;
+  font-weight: 600;
+}
+
+.college_dashboard__login__form form button {
+  padding: 1rem;
+  text-transform: uppercase;
+  background: #FF8B9C;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.college_dashboard__login__form form ::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.college_dashboard__login__form form :-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.college_dashboard__login__form form ::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.college_dashboard__login__form form ::placeholder {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.college_dashboard__login__form__showpw {
+  position: absolute;
+  color: #DB324D;
+  right: 1.5rem;
+  bottom: 5.6rem;
+  cursor: pointer;
+}
+
 .contact_us {
   width: 100%;
   height: 100vh;

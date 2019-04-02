@@ -287,4 +287,87 @@
 // College Dashboard Login Styling
 .college_dashboard__login {
 	
+	width: 100vw;
+	height: 100vh;
+	background: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/HlvPz7x3ej0l637pw/videoblocks-two-dark-corporate-high-rise-buildings-in-new-york_rvxnuemig_thumbnail-full01.png');
+	background: {
+		size: cover;
+		position: center;
+	}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__container {
+		background-color: transparentize($rusty-red, 0.2);
+		padding: 1rem;
+		width: 30%;
+		height: auto;
+		border-radius: 0.5rem;
+	}
+
+	&__header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&__logo {
+			border-right: 1px solid white;
+			padding-right: 2rem;
+			img {
+				width: 12rem;
+			}
+		}
+		&__title {
+			h4 {
+				text-transform: uppercase;
+				padding-left: 2rem;
+				color: white;
+				font-weight: $bold;
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	&__form {
+		position: relative;
+		form {
+			margin: 2rem 0 0 0;
+			display: flex;
+			flex-direction: column;
+			input[type='text'],
+			input[type='email'],
+			input[type='password'] {
+				margin: 0 0 1rem 0;
+				padding: 1rem;
+				box-sizing: border-box;
+				border: none;
+				border-radius: 0.5rem;
+				font-size: 1.4rem;
+				color: grey;
+				font-weight: $semiBold;
+			}
+			button {
+				padding: 1rem;
+				text-transform: uppercase;
+				background: $light-red;
+				border: none;
+				border-radius: 0.5rem;
+				color: white;
+				cursor: pointer;
+				font-weight: $semiBold;
+			}
+			::placeholder {
+				font-weight: $medium;
+				font-size: 1.3rem;
+			}
+		}
+		&__showpw {
+			position: absolute;
+			color: $rusty-red;
+			right: 1.5rem;
+			bottom: 5.6rem;
+			cursor: pointer;
+		}
+	}
+
 }

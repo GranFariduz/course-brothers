@@ -28,19 +28,51 @@
 
 	<!-- COLLEGE_DASHBOARD_LOGIN -->
   <div class="college_dashboard__login">
-		
+
+		<div class="college_dashboard__login__container">
+			<div class="college_dashboard__login__header">
+				<div class="college_dashboard__login__header__logo">
+					<img src="../assets/svg/cb-logo.svg" alt="CourseBrother Logo" />
+				</div>
+				<div class="college_dashboard__login__header__title">
+					<h4>institute login</h4>
+				</div>
+			</div>
+			<div class="college_dashboard__login__form">
+				<form action="#">
+					<input type="email" placeholder='Enter your email' />
+					<input type="password" placeholder='Enter your password' />
+					<button type='submit'>log in</button>
+					<div class="college_dashboard__login__form__showpw">
+						<i class='fas fa-eye'></i>
+					</div>
+				</form>
+			</div>
+		</div>
+
   </div>
   <!-- /COLLEGE_DASHBOARD_LOGIN -->
 
-
-<!-- jQuery -->
-<script
-		src="https://code.jquery.com/jquery-3.3.1.min.js"
-		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		crossorigin="anonymous">
-</script>
 <!-- CUSTOM JS -->
-<script src='../js/collegeDashboard.js'></script>
+<script>
+
+	// For show password in college login page
+	const collegeLoginPassword = document.querySelector('.college_dashboard__login__form form input[type="password"]');
+	const collegeLoginEye = document.querySelector('.college_dashboard__login__form__showpw');
+
+	let eyeOfAgamotto3 = 0;
+
+	collegeLoginEye.addEventListener('click', () => {
+		if (eyeOfAgamotto3 === 0) {
+			collegeLoginPassword.type = 'text';
+			eyeOfAgamotto3 = 1;
+		} else if (eyeOfAgamotto3 === 1) {
+			collegeLoginPassword.type = 'password';
+			eyeOfAgamotto3 = 0;
+		}
+	});
+
+</script>
 
 </body>
 </html>
