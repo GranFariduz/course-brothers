@@ -27,6 +27,11 @@
         <span><img src="./assets/svg/Icons/white/clipboard-with-pencil-.svg" /></span>
         <h5>register</h5>
       </div>
+
+      <div class="navbar_main__appendix__compare">
+        <span><img src="./assets/svg/Icons/red/compare.svg" /></span>
+        <h5>compare</h5>
+      </div>
       
       <div class="navbar_main__appendix__cart">
         <h5>cart</h5>
