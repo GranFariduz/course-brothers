@@ -395,6 +395,9 @@
       &__register {
         display: none;
       }
+      &__compare {
+        display: none;
+      }
       &__cart {
         all: initial;
         padding-right: 1.5rem;
@@ -487,6 +490,24 @@
         font-size: 1.3rem;
         background-color: transparent;
         border-radius: 0.5rem;
+      }
+    }
+
+    &__compare {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 2rem;
+      padding-top: 2rem;
+      img {
+        width: 2rem;
+        padding-right: 1rem;
+      }
+      h4 {
+        text-transform: uppercase;
+        color: $rusty-red;
+        font-size: 1.4rem;
+        font-weight: $semiBold;
       }
     }
 

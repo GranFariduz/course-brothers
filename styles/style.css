@@ -5138,6 +5138,9 @@ body {
   .navbar_main__appendix__register {
     display: none;
   }
+  .navbar_main__appendix__compare {
+    display: none;
+  }
   .navbar_main__appendix__cart {
     all: initial;
     padding-right: 1.5rem;
@@ -5228,6 +5231,29 @@ body {
     font-size: 1.3rem;
     background-color: transparent;
     border-radius: 0.5rem;
+  }
+  .mob__sidebar__compare {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 2rem;
+    padding-top: 2rem;
+  }
+  .mob__sidebar__compare img {
+    width: 2rem;
+    padding-right: 1rem;
+  }
+  .mob__sidebar__compare h4 {
+    text-transform: uppercase;
+    color: #DB324D;
+    font-size: 1.4rem;
+    font-weight: 600;
   }
   .mob__sidebar__sep {
     margin: 2rem 0;

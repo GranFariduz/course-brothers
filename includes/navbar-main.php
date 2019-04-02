@@ -226,6 +226,11 @@
       <button>LOG IN / REGISTER</button>
     </div>
 
+    <div class="mob__sidebar__compare">
+      <img src="./assets/svg/Icons/red/compare.svg" alt="compare icon" />
+      <h4>compare courses</h4>
+    </div>
+
     <div class="mob__sidebar__sep"></div>
 
     <div class="mob__sidebar__courses">
