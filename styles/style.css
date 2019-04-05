@@ -4267,12 +4267,12 @@ body {
 
 @media screen and (max-width: 480px) {
   .login_modal {
-    height: 52rem;
-    left: 45%;
-    top: 45%;
+    height: 54rem;
+    left: 50%;
+    top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 35rem;
+    width: 34rem;
   }
   .login_modal__main {
     width: 100%;
@@ -4296,11 +4296,11 @@ body {
   }
   .register_modal {
     height: 58rem;
-    left: 45%;
-    top: 45%;
+    left: 50%;
+    top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 35rem;
+    width: 34rem;
   }
   .register_modal__main {
     width: 100%;
@@ -5214,8 +5214,8 @@ body {
 @media screen and (max-width: 480px) {
   .newsletter_popup {
     height: 42rem;
-    width: 80%;
-    left: 45%;
+    width: 90%;
+    left: 50%;
   }
   .newsletter_popup__illustration {
     display: none;
