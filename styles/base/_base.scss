@@ -20,6 +20,9 @@ body {
 
 // Responsive Design
 @media screen and (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+  }
   .main-container {
     margin-top: 11rem;
   }
