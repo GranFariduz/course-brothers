@@ -5208,6 +5208,27 @@ body {
   color: #cecdcd;
 }
 
+@media screen and (max-width: 480px) {
+  .newsletter_popup {
+    height: 42rem;
+    width: 80%;
+    left: 45%;
+  }
+  .newsletter_popup__illustration {
+    display: none;
+  }
+  .newsletter_popup__main {
+    width: 100%;
+    padding: 3rem;
+  }
+  .newsletter_popup__main__title {
+    font-size: 2.5rem;
+  }
+  .newsletter_popup__main__form {
+    margin-top: 2.5rem;
+  }
+}
+
 .news_updates {
   width: 100%;
   height: 45rem;
@@ -5556,7 +5577,7 @@ body {
 }
 
 .policy_header {
-  width: 80%;
+  width: 90%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
@@ -5570,6 +5591,26 @@ body {
   text-transform: uppercase;
   font-size: 3rem;
   margin: 0;
+}
+
+.policy_content {
+  padding: 2rem 3rem;
+}
+
+@media screen and (max-width: 480px) {
+  .policy_header {
+    padding: 2rem 2rem;
+  }
+  .policy_header h3 {
+    font-size: 1.8rem;
+  }
+  .policy_content {
+    padding: 1rem 2rem;
+  }
+  .policy_content p {
+    font-size: 1.5rem;
+    color: grey;
+  }
 }
 
 .preloader {

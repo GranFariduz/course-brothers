@@ -3,7 +3,7 @@
   height: 60vh;
 }
 .policy_header {
-  width: 80%;
+  width: 90%;
   box-sizing: border-box;
   margin: 0 auto;
   border-bottom: 1px solid $rusty-red;
@@ -15,4 +15,28 @@
     font-size: 3rem;
     margin: 0;
   }
+}
+
+.policy_content {
+  padding: 2rem 3rem;
+}
+
+// Responsive Design for Policy pages
+@media screen and (max-width: 480px) {
+
+  .policy_header {
+    padding: 2rem 2rem;
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .policy_content {
+    padding: 1rem 2rem;
+    p {
+      font-size: 1.5rem;
+      color: grey;
+    }
+  }
+
 }

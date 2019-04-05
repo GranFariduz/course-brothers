@@ -31,8 +31,12 @@
 
 
     <!-- NAVBAR_SCROLL -->
-    <?php include '../includes/navbar-scroll.php' ?>
+    <?php include '../includes/navbar-main.php' ?>
     <!-- /NAVBAR_SCROLL -->
+
+    <!-- LOGIN_REGISTER_MODALS -->
+    <?php include '../includes/login-register-modal.php' ?>
+    <!-- /LOGIN_REGISTER_MODALS -->
 
     <!-- POLICY_CONTAINER -->
     <div class="policy_container">
@@ -42,6 +46,10 @@
         <h3>disclaimer</h3>
       </div>
       <!-- /POLICY_HEADER -->
+
+      <div class="policy_content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tenetur, ullam voluptates nobis, quia, ipsam modi natus ratione voluptas quae atque perferendis repellendus? Voluptas tempore dolor, quod, accusantium ipsa in, quidem iusto rem blanditiis commodi autem non et sit vero reprehenderit dicta impedit? Harum architecto molestiae explicabo dolore minima culpa?z</p>
+      </div>
       
     </div>
     <!-- POLICY_CONTAINER -->
@@ -63,8 +71,10 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">
   </script>
-  <!-- WOW JS -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+  <!-- TweenMax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <!-- CUSTOM JS -->
+  <script src='../js/navbar.js'></script>
 
 </body>
 </html> 
